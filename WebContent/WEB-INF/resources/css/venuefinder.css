@@ -1,100 +1,19 @@
 @CHARSET "UTF-8";
 
-
-.img {
-  width: 120px;
-}
-
-.img {
-  height: 120px;
-}
-
-.redText {
-  color: #ff0000;
-}
-
-.italText {
-  font-style: italic;
-}
-
-.centerMe {
-  text-align: center;
-}
-
-body {
-  background-color: cream;
-}
-
-#product {
-  width: 300px;
-  float:centre;
-}
-#price {
-  width: 500px;
-  float: centre;
-  color: Red;
-  margin-bottom:5px;
-}
-
-#totalPrice {
-  float: right;
-  color: Green;
-  margin: 5px;
-  padding: 15px;
-  height: 5px;
-  width: 500px;
-}
-#discPrice {
-  float: right;
-  color: Blue;
-  margin: 5px;
-  padding: 15px;
-  height: 5px;
-  width: 400px;
-  align: right;
-}
-
-#finalPrice {
-  float: right;
-  color: Green;
-  margin:5px;
-  padding: 5px;
-    height: 5px;
-width: 500px;
-}
-
-#displayItems {
-    display: block; width: 150px; height: 300px;
-    padding: 40px 0 0 0; margin: 1 auto;
-    float: left;
-    color: Green;
-}
-
-#title {
+#result {
   position: relative;
   float: centre;
   color: Blue;
 }
-#button {
-    border-radius:1px;
-    color: Green;
-    font-size: 20px;
 
-}
-.basketBut {
+#button {
     display: block; width: 150px; height: 30px;
     padding: 40px 0 0 0; margin: 0 auto;
     float: right;
     color: Green;
+    font-size: 20px;
 }
 
-#deleteItem {
-    display: block; width: 50px; height: 50px;
-    float: centre;
-    color: Red;
-}
-
-}
 .hr {
      color: #f00;
      background: #f00;

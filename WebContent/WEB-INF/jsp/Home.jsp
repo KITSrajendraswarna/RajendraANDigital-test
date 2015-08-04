@@ -16,22 +16,30 @@
 	<form method="POST" name="venueFinderHome"
 		action="${pageContext.request.contextPath}/results">
 
-		<input id="searchTerms" name="searchTerms" type="text" value="">
-		<p>
-			<input type="submit" value="Find Venues"/>
-		</p>
-
-		<div class="hrl">
-			<hr />
+		<div>
+		<table>
+			<tr>
+			<td colspan="2">
+			<label id="searchInput"></label> Search Term:  <input id="searchTerms" name="searchTerms" type="text" value="">
+			</td>
+			<td colspan="2"> &nbsp; &nbsp;</td>
+			<td colspan="2">
+			<label id="searchPlace"></label> Search Place: <input id="searchPlace" name="searchPlace" type="text" value="">
+			</td>
+			</tr>
+			<tr> <td> &nbsp; </td> <tr>
+			<tr>
+			<td colspan="2">
+			<div>
+			<input id="button" type="submit" value="Search For Venues"/>
+			</div>
+			</td>
+			</tr>
+		</table>
 		</div>
-		<h3>Matching Results</h3>
-		<div class="hrl">
-			<hr />
-		</div>
 
-		<p>Click on the button to load result.html file:</p>
+		<div class="hrl"> <hr/></div>
 
-		<div id="stage" style="background-color: #cc0;">STAGE</div>
 
 	</form>
 </body>

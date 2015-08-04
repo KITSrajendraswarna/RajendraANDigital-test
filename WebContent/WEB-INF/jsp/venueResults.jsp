@@ -17,18 +17,35 @@
 	<form method="POST" name="venueFinder"
 		action="${pageContext.request.contextPath}/results">
 
-	<input id="searchTerms" name="searchTerms" type="text" value="">
-	<p>
-	<input type="submit" value="Find Venues""/>
-	</p>
-	<div class="hrl"> <hr /> </div>
-	<h3>Matching Results</h3>
-	<div class="hrl"> <hr /> </div>
+		<div>
+		<table>
+			<tr>
+			<td colspan="2">
+			<label id="searchInput"></label> Search Term:  <input id="searchTerms" name="searchTerms" type="text" value="">
+			</td>
+			<td colspan="2"> &nbsp; &nbsp;</td>
+			<td colspan="2">
+			<label id="searchPlace"></label> Search Place: <input id="searchPlace" name="searchPlace" type="text" value="">
+			</td>
+			</tr>
+			<tr> <td> &nbsp; </td> <tr>
+			<tr>
+			<td colspan="2">
+			<div>
+			<input id="button" type="submit" value="Search For Venues"/>
+			</div>
+			</td>
+			</tr>
+		</table>
+		</div>
 
+		<div class="hrl"> <hr/></div>
+		<h3>Matching Results</h3>
 
-    <div id="stage" style="background-color:#cc0;">
+		<div  id="result" style="background-color:cream;">
 
 	<c:forEach var="item" items="${results}">
+		<div class="hrl"> <hr /> </div>
 		<div id="product">${item}</div>
 	</c:forEach>
 	<p></p>
@@ -37,6 +54,7 @@
 	<p></p>
 	</div>
 	<div class="hrl"> <hr /> </div>
+	<h4> Results End</h4>
 </form>
 </body>
 </html>

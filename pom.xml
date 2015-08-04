@@ -65,5 +65,19 @@
 			<type>jar</type>
 			<scope>provided</scope>
 		</dependency>
+		<!-- Required for PowerMock -->
+    <dependency>
+        <groupId>org.powermock</groupId>
+        <artifactId>powermock-api-mockito</artifactId>
+        <version>1.4.12</version>
+        <scope>test</scope>
+    </dependency>
+    <!-- Required for PowerMockRule -->
+    <dependency>
+        <groupId>org.powermock</groupId>
+        <artifactId>powermock-module-junit4-rule-agent</artifactId>
+        <version>1.4.12</version>
+        <scope>test</scope>
+    </dependency>
   </dependencies>
 </project>
